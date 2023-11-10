@@ -5,12 +5,15 @@ import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import About from './pages/About'
 import { Profile } from './pages/Profile'
+import Header from './component/Header'
+import { Footer } from './component/Footer'
 
 function App() {
   
 
   return (
     <BrowserRouter>
+     <Header/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/sign-in' element={<SignIn/>} />
@@ -18,6 +21,7 @@ function App() {
         <Route path='/about' element={<About/>} />
         <Route path='/profile' element={<Profile/>} />
       </Routes>
+      {/* <Footer/> */}
     </BrowserRouter>
   )
 }
